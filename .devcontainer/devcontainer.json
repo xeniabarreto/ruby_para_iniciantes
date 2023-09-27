@@ -1,0 +1,42 @@
+{
+	"name": "ruby322-dev",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+		"args": {
+
+		}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"johnpapa.vscode-peacock",
+				"github.copilot",
+				"shardulm94.trailing-spaces",
+				"rebornix.ruby",
+				"misogi.ruby-rubocop",
+				"shopify.ruby-lsp",
+				"KoichiSasada.vscode-rdbg"
+			],
+			"settings": {
+				"terminal.integrated.profiles.linux": {
+					"bash": {
+						"path": "/bin/bash"
+					}
+				},
+				"editor.formatOnSave": true,
+				"editor.formatOnSaveMode": "file",
+				"editor.formatOnType": true,
+				"editor.semanticHighlighting.enabled": true,
+				"editor.rulers": [
+					100
+				],
+
+				"workbench.colorCustomizations": {
+					"editorRuler.foreground": "#ff4081"
+				}
+			}
+		}
+	}
+}
